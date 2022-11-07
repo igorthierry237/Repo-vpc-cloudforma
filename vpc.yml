@@ -9,7 +9,7 @@ Mappings:
 Conditions: 
 
 Resources: 
- myVPC:
+myVPC:
   Type: AWS::EC2::VPC
   Properties:
     CidrBlock: 10.0.0.0/16
