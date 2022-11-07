@@ -1,9 +1,22 @@
-myVPC:
+AWSTemplateFormatVersion: 2010-09-09
+Description: ---
+Metadata: 
+
+Parameters: 
+
+Mappings: 
+
+Conditions: 
+
+Resources: 
+ myVPC:
   Type: AWS::EC2::VPC
   Properties:
     CidrBlock: 10.0.0.0/16
-    EnableDnsSupport: 'true'
-    EnableDnsHostnames: 'true'
+    EnableDnsSupport: true
     Tags:
-     - Key: stack
-       Value: production
+      - Key: keyname
+        Value: value
+
+
+Outputs:
